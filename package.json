@@ -1,12 +1,16 @@
 {
   "name": "x-logo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "github-fork-ribbon-css": "^0.2.3",
+    "js-file-download": "^0.4.12",
+    "normalize.css": "^8.0.1",
     "vue": "^3.0.5"
   },
   "devDependencies": {

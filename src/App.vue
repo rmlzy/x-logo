@@ -1,27 +1,51 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="x-logo">
+    <a
+      class="github-fork-ribbon"
+      target="_blank"
+      href="https://github.com/rmlzy/x-logo"
+      data-ribbon="Fork me on GitHub"
+      title="Fork me on GitHub"
+    >
+      Fork me on GitHub
+    </a>
+
+    <img class="logo" src="./assets/logo.png" alt="XLogo" />
+    <h2 class="description">A XVIDEOS Flavour Logo Generator</h2>
+    <x-videos></x-videos>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import XVideos from "./generator/XVideos.vue";
+import "normalize.css";
+import "github-fork-ribbon-css/gh-fork-ribbon.css";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    XVideos,
   },
 });
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style lang="less">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #010101;
+}
+
+.x-logo {
+  padding: 40px 0;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  .logo {
+    height: 40px;
+  }
+
+  .description {
+    color: #fefefe;
+  }
 }
 </style>
